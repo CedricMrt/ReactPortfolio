@@ -17,7 +17,7 @@ function Projects() {
               className='card__button'
             >
               <img
-                src={"/public/kanban.webp"}
+                src={"/kanban.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -30,15 +30,15 @@ function Projects() {
                 </span>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/express.svg"} alt='' />
+                    <img src={"/express.svg"} alt='' />
                     Express js
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/scss.svg"} alt='' />
+                    <img src={"/scss.svg"} alt='' />
                     scss
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>
@@ -57,7 +57,7 @@ function Projects() {
               className='card__button'
             >
               <img
-                src={"/public/coffee-shop-back-end.webp"}
+                src={"/coffee-shop-back-end.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -70,15 +70,15 @@ function Projects() {
                 </span>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/express.svg"} alt='' />
+                    <img src={"/express.svg"} alt='' />
                     Express js
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/css3.svg"} alt='' />
+                    <img src={"/css3.svg"} alt='' />
                     Css
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>
@@ -93,7 +93,7 @@ function Projects() {
               className='card__button'
             >
               <img
-                src={"/public/wheatherApp.webp"}
+                src={"/wheatherApp.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -112,15 +112,15 @@ function Projects() {
                 </a>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/html5.svg"} alt='' />
+                    <img src={"/html5.svg"} alt='' />
                     Html
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/css3.svg"} alt='' />
+                    <img src={"/css3.svg"} alt='' />
                     Css
                   </span>
                   <span className='language__item'>
-                    <img src={"public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>
@@ -135,7 +135,7 @@ function Projects() {
               className='card__button'
             >
               <img
-                src={"/public/quizz.webp"}
+                src={"/quizz.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -151,15 +151,15 @@ function Projects() {
                 </a>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/html5.svg"} alt='' />
+                    <img src={"/html5.svg"} alt='' />
                     Html
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/css3.svg"} alt='' />
+                    <img src={"/css3.svg"} alt='' />
                     Css
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>
@@ -177,7 +177,7 @@ function Projects() {
               className='card__button'
             >
               <img
-                src={"/public/todolist-project.webp"}
+                src={"/todolist-project.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -196,15 +196,15 @@ function Projects() {
                 </a>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/html5.svg"} alt='' />
+                    <img src={"/html5.svg"} alt='' />
                     Html
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/css3.svg"} alt='' />
+                    <img src={"/css3.svg"} alt='' />
                     Css
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>
@@ -222,7 +222,7 @@ function Projects() {
               }
             >
               <img
-                src={"/public/projet-portfolio1.webp"}
+                src={"/projet-portfolio1.webp"}
                 alt='image du projet'
                 className='card__img'
               />
@@ -241,15 +241,15 @@ function Projects() {
                 </a>
                 <div className='codeLanguage'>
                   <span className='language__item'>
-                    <img src={"/public/html5.svg"} alt='' />
+                    <img src={"/html5.svg"} alt='' />
                     Html
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/css3.svg"} alt='' />
+                    <img src={"/css3.svg"} alt='' />
                     Css
                   </span>
                   <span className='language__item'>
-                    <img src={"/public/js.svg"} alt='' />
+                    <img src={"/js.svg"} alt='' />
                     Javascript
                   </span>
                 </div>

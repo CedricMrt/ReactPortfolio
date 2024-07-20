@@ -29,7 +29,7 @@ function Skills() {
               <h3 className='skills__title'>Design</h3>
               <p className='reveal-1'>
                 <img
-                  src={"/public/figma.svg"}
+                  src={"/figma.svg"}
                   alt='icon figma'
                   className='skills__icon'
                 />
@@ -41,28 +41,24 @@ function Skills() {
               <h3 className='skills__title'>Front-end</h3>
               <p className='reveal-1'>
                 <img
-                  src={"/public/css3.svg"}
+                  src={"/css3.svg"}
                   alt='icon css'
                   className='skills__icon'
                 />
                 <img
-                  src={"/public/scss.svg"}
+                  src={"/scss.svg"}
                   alt='icon scss'
                   className='skills__icon'
                 />
                 Css/Scss
               </p>
               <p className='reveal-2'>
-                <img
-                  src={"/public/js.svg"}
-                  alt='icon js'
-                  className='skills__icon'
-                />
+                <img src={"/js.svg"} alt='icon js' className='skills__icon' />
                 Javacript
               </p>
               <p className='reveal-3'>
                 <img
-                  src={"/public/reactts-svgrepo-com.svg"}
+                  src={"/reactts-svgrepo-com.svg"}
                   alt='icon react'
                   className='skills__icon'
                 />
@@ -73,7 +69,7 @@ function Skills() {
               <h3 className='skills__title'>Back-end</h3>
               <p className='reveal-1'>
                 <img
-                  src={"/public/nodejs.svg"}
+                  src={"/nodejs.svg"}
                   alt='icon nodejs'
                   className='skills__icon'
                 />
@@ -81,7 +77,7 @@ function Skills() {
               </p>
               <p className='reveal-2'>
                 <img
-                  src={"/public/express.svg"}
+                  src={"/express.svg"}
                   alt='icon expressjs'
                   className='skills__icon'
                 />
@@ -89,12 +85,12 @@ function Skills() {
               </p>
               <p className='reveal-3'>
                 <img
-                  src={"/public/postgresql.svg"}
+                  src={"/postgresql.svg"}
                   alt='icon postgresql'
                   className='skills__icon'
                 />
                 <img
-                  src={"/public/mongodb.svg"}
+                  src={"/mongodb.svg"}
                   alt='icon mongoDB'
                   className='skills__icon'
                 />
