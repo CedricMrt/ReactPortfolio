@@ -17,7 +17,7 @@ function Contact() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_KEY).then(
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       (_result) => {
-        setStateMessage("Message sent!");
+        setStateMessage("Message envoyé!");
         setIsSubmitting(false);
         setTimeout(() => {
           setStateMessage(null);
@@ -25,7 +25,9 @@ function Contact() {
       },
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       (_error) => {
-        setStateMessage("Something went wrong, please try again later");
+        setStateMessage(
+          "Quelque chose c'est mal passé. Merci d'essayer plus tard"
+        );
         setIsSubmitting(false);
         setTimeout(() => {
           setStateMessage(null);
