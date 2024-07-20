@@ -1,0 +1,11 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--red-12);
+}

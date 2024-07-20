@@ -1,0 +1,103 @@
+.main {
+  color: var(--red-12);
+}
+
+.main__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 0 8rem;
+
+  & .content__left {
+    max-width: 70%;
+  }
+
+  & .content__right {
+    min-width: 8rem;
+    margin-left: 1.5rem;
+  }
+
+  & .title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  & .title .myName {
+    font-size: 5rem;
+    background: var(--red-12);
+    background: linear-gradient(to right, var(--red-12) 0%, var(--red-11) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .job {
+    font-size: 2rem;
+  }
+
+  & .job span {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  & .profilImg {
+    width: clamp(7rem, 20rem, 22rem);
+    border-radius: 50%;
+  }
+
+  & .socials__items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  & .socials__item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--red-5);
+    color: var(--red-12);
+    border-radius: 20px;
+    box-shadow: 0 3px 8px black;
+  }
+
+  & .socials__item a:hover {
+    background: var(--red-6);
+  }
+
+  & .socials__item a svg {
+    margin-right: 0.5rem;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+section {
+  margin: 15rem 0;
+  color: var(--red-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section h2 {
+  margin: 5rem 0 8rem;
+  font-size: 2.7rem;
+  background: var(--red-12);
+  background: linear-gradient(to right, var(--red-12) 0%, var(--red-11) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

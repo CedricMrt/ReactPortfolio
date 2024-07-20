@@ -1,0 +1,166 @@
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 40%;
+
+  & .navbar__link {
+    padding: 0 10px;
+  }
+  & .navbar__link > a {
+    color: var(--red-12);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  & .navbar__link > a:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+}
+
+#burger {
+  display: none;
+}
+
+/*  Small and medium  device nav bar */
+@media screen and (max-width: 768px) {
+  .navbar__links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.199);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transform: translateX(150%);
+    transition: all 0.3s ease-in;
+    z-index: 999;
+
+    & .navbar__link {
+      transform: translateX(150%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    & .navbar__link > a {
+      display: block;
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+      color: var(--red-12);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .show-nav .navbar__links {
+    min-width: 50%;
+    padding: 1rem;
+    transform: translateX(0%);
+  }
+
+  .show-nav .navbar__link {
+    transform: translateX(0%);
+  }
+
+  .navbar__link > a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .navbar__link > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--red-4);
+    transition: width 0.4s;
+  }
+
+  .navbar__link:hover > a::after {
+    width: 100%;
+  }
+
+  .navbar__link > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--red-4);
+    transition: width 0.4s;
+  }
+
+  /* Toggle menu */
+  #burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--red-12);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: var(--red-12);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before {
+    transform: translateY(-12px);
+  }
+
+  .bar::after {
+    transform: translateY(12px);
+  }
+
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+  }
+
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+
+  /*Animations */
+  .show-nav .first {
+    transition: all 0.6s ease-out;
+  }
+
+  .show-nav .second {
+    transition: all 0.8s ease-out;
+  }
+
+  .show-nav .third {
+    transition: all 1s ease-out;
+  }
+
+  .show-nav .four {
+    transition: all 1.2s ease-out;
+  }
+
+  .show-nav .fifth {
+    transition: all 1.4s ease-out;
+  }
+}

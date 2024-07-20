@@ -1,0 +1,31 @@
+.skills__items {
+  width: 100%;
+
+  & .skills__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    & .skills__title {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.skills__item p {
+  margin-top: 1rem;
+  background: var(--red-12);
+  background: linear-gradient(to right, var(--red-12) 0%, var(--red-11) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+
+  & .skills__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin-right: 0.5rem;
+  }
+}

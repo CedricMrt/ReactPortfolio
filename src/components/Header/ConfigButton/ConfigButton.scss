@@ -1,0 +1,79 @@
+/* ################ toggle inputs dark/light mode and language ################ */
+
+nav label {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: var(--red-4);
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+nav label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  background: linear-gradient(180deg, var(--red-5), var(--red-3));
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+nav input:checked + label {
+  background: var(--red-4);
+}
+
+nav input:checked + label:after {
+  right: 1px;
+  transform: translateX(100%);
+  background: linear-gradient(180deg, var(--red-5), var(--red-3));
+}
+
+nav label,
+nav label::after {
+  transition: 0.3s;
+}
+
+nav label svg {
+  position: absolute;
+  top: 4px;
+  z-index: 100;
+}
+
+nav label img {
+  position: absolute;
+  width: 17px;
+  top: 1px;
+  z-index: 100;
+}
+
+.moon {
+  left: 4px;
+  transition: 0.3s;
+}
+
+.sun {
+  left: 23px;
+  transition: 0.3s;
+}
+
+.fr {
+  left: 2px;
+  transition: 0.3s;
+}
+
+.eng {
+  left: 21px;
+  transition: 0.3s;
+}
