@@ -9,6 +9,49 @@ function Projects() {
         <h2 id='h2Title2'>{t("translation.h2Title2")}</h2>
 
         <div className='card__container'>
+        <article className='card__article'>
+            <div
+            onClick={() =>
+              window.open("https://innovqube.com/mysaas/", "_blank")
+            }
+              className='card__button'
+            >
+              <img
+                src={"/Saas.webp"}
+                alt='image du projet'
+                className='card__img'
+              />
+              <div className='card__data'>
+                <h3 className='card__title' id='cardTitle6'>
+                  {t("translation.cardTitle6")}
+                </h3>
+                <span className='card__description' id='cardText6'>
+                  {t("translation.cardText6")}
+                </span>
+                <a
+                  href='https://innovqube.com/mysaas/'
+                  target='_blank'
+                >
+                  {t("translation.innovqube")}
+                </a>
+                <div className='codeLanguage'>
+                  <span className='language__item'>
+                    <img src={"/laravel.svg"} alt='' />
+                    Laravel
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/tailwind.svg"} alt='' />
+                    Tailwind css
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/php.svg"} alt='' />
+                    Php
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
           <article className='card__article'>
             <div
               onClick={() =>

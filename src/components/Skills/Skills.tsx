@@ -8,7 +8,7 @@ function Skills() {
   const { ref, isIntersecting } = useIntersectionObserver({
     root: null,
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.45,
   });
 
   useEffect(() => {
@@ -50,11 +50,16 @@ function Skills() {
                   alt='icon scss'
                   className='skills__icon'
                 />
-                Css/Scss
+                <img
+                  src={"/tailwind.svg"}
+                  alt='icon scss'
+                  className='skills__icon'
+                />
+                Css/Scss/Tailwind
               </p>
               <p className='reveal-2'>
                 <img src={"/js.svg"} alt='icon js' className='skills__icon' />
-                Javacript
+                Javascript
               </p>
               <p className='reveal-3'>
                 <img
@@ -62,7 +67,7 @@ function Skills() {
                   alt='icon react'
                   className='skills__icon'
                 />
-                React
+                React (TypeScript)
               </p>
             </li>
             <li className='skills__item'>
@@ -94,13 +99,27 @@ function Skills() {
                   alt='icon mongoDB'
                   className='skills__icon'
                 />
-                Postgresql/MongoDB
+                <img
+                  src={"/mysql.svg"}
+                  alt='icon mongoDB'
+                  className='skills__icon'
+                />
+                Postgresql/MongoDB/MySQL
+              </p>
+              <p className='reveal-4'>
+                <img
+                  src={"/php.svg"}
+                  alt='icon php'
+                  className='skills__icon'
+                />
+                PHP (Filament, Livewire)
               </p>
             </li>
             <li className='skills__item'>
               <h3 className='skills__title'>Other</h3>
               <p className='reveal-1'>
                 <svg
+                className="skills__icon"
                   width='20'
                   height='20'
                   viewBox='0 0 15 15'
@@ -114,9 +133,11 @@ function Skills() {
                     clipRule='evenodd'
                   ></path>
                 </svg>
-                git & github
+                Git & Github
               </p>
-              <p></p>
+              <p><svg className="skills__icon" viewBox="0 -10 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128.07485,236.074667 L128.07485,236.074667 L175.17885,91.1043048 L80.9708495,91.1043048 L128.07485,236.074667 L128.07485,236.074667 Z" fill="#E24329"> </path> <path d="M128.07485,236.074423 L80.9708495,91.104061 L14.9557638,91.104061 L128.07485,236.074423 L128.07485,236.074423 Z" fill="#FC6D26"> </path> <path d="M14.9558857,91.1044267 L14.9558857,91.1044267 L0.641828571,135.159589 C-0.663771429,139.17757 0.766171429,143.57955 4.18438095,146.06275 L128.074971,236.074789 L14.9558857,91.1044267 L14.9558857,91.1044267 Z" fill="#FCA326"> </path> <path d="M14.9558857,91.1045486 L80.9709714,91.1045486 L52.6000762,3.79026286 C51.1408762,-0.703146667 44.7847619,-0.701927619 43.3255619,3.79026286 L14.9558857,91.1045486 L14.9558857,91.1045486 Z" fill="#E24329"> </path> <path d="M128.07485,236.074423 L175.17885,91.104061 L241.193935,91.104061 L128.07485,236.074423 L128.07485,236.074423 Z" fill="#FC6D26"> </path> <path d="M241.193935,91.1044267 L241.193935,91.1044267 L255.507992,135.159589 C256.813592,139.17757 255.38365,143.57955 251.96544,146.06275 L128.07485,236.074789 L241.193935,91.1044267 L241.193935,91.1044267 Z" fill="#FCA326"> </path> <path d="M241.193935,91.1045486 L175.17885,91.1045486 L203.549745,3.79026286 C205.008945,-0.703146667 211.365059,-0.701927619 212.824259,3.79026286 L241.193935,91.1045486 L241.193935,91.1045486 Z" fill="#E24329"> </path> </g> </g></svg>GitLab</p>
+
+              <p><svg className="skills__icon" xmlns="http://www.w3.org/2000/svg" viewBox='4 2 34 30'><path className="svg-icon" fill="#1A67A3" d="M20.224 25.535h.004c-.001.021-.004.041-.004.061 0 1 .838 1.812 1.872 1.812 1.035 0 1.873-.812 1.873-1.812l-.003-.061h.003v-4.493h-3.745v4.493z"></path> <path className="svg-icon" fill="#1A67A3" d="M28.961 1.32h-2.496a6.24 6.24 0 0 0-6.241 6.241v7.49H9.24A6.24 6.24 0 0 0 3 21.291v4.993a6.24 6.24 0 0 0 6.24 6.239h2.497a6.241 6.241 0 0 0 6.241-6.239v-4.993c0-.083-.003-.166-.006-.249h-3.739v5.242a2.5 2.5 0 0 1-2.496 2.496H9.24a2.5 2.5 0 0 1-2.496-2.496v-4.993a2.5 2.5 0 0 1 2.496-2.496h19.722a6.242 6.242 0 0 0 6.242-6.241V7.562a6.244 6.244 0 0 0-6.243-6.242zm2.497 11.234a2.5 2.5 0 0 1-2.497 2.497h-4.993V7.562a2.5 2.5 0 0 1 2.497-2.497h2.496a2.5 2.5 0 0 1 2.497 2.497v4.992z"></path> </svg>OpenProject</p>
             </li>
           </ul>
         </div>
