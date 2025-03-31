@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className='header'>
       <nav
-        className={`navbar ${classShowNav}`}
+        className={`navbar  ${classShowNav}`}
         role='navigation'
         aria-label='menu-principal'
       >

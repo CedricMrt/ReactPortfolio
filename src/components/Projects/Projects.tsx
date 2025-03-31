@@ -1,19 +1,81 @@
+import { useEffect } from "react";
 import "./Projects.scss";
 import { useTranslation } from "react-i18next";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 function Projects() {
   const { t } = useTranslation();
+  const { ref, isIntersecting } = useIntersectionObserver({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.45,
+  });
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current
+        ?.querySelectorAll('[class*="revealProject-"]')
+        .forEach((el) => {
+          el.classList.add("revealProject--visible");
+        });
+    }
+  }, [isIntersecting, ref]);
   return (
     <>
-      <section className='projects' id='projects'>
+      <section className='projects' id='projects ' ref={ref}>
         <h2 id='h2Title2'>{t("translation.h2Title2")}</h2>
 
         <div className='card__container'>
-        <article className='card__article'>
+          <article className='card__article revealProject-4'>
             <div
-            onClick={() =>
-              window.open("https://innovqube.com/mysaas/", "_blank")
-            }
+              onClick={() =>
+                window.open(
+                  "https://my-educational-app-cm.vercel.app/",
+                  "_blank"
+                )
+              }
+              className='card__button'
+            >
+              <img
+                src={"/educApp.png"}
+                alt='image du projet'
+                className='card__img'
+              />
+              <div className='card__data'>
+                <h3 className='card__title' id='cardTitle7'>
+                  {t("translation.cardTitle7")}
+                </h3>
+                <span className='card__description' id='cardText7'>
+                  {t("translation.cardText7")}
+                </span>
+                <a
+                  href='https://my-educational-app-cm.vercel.app/'
+                  target='_blank'
+                >
+                  {t("translation.clickHereTry")}
+                </a>
+                <div className='codeLanguage'>
+                  <span className='language__item'>
+                    <img src={"/nextjs.svg"} alt='' />
+                    NextJs
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/tailwind.svg"} alt='' />
+                    Tailwind
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/firebase.svg"} alt='' />
+                    FireBase
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className='card__article revealProject-3'>
+            <div
+              onClick={() =>
+                window.open("https://innovqube.com/mysaas/", "_blank")
+              }
               className='card__button'
             >
               <img
@@ -28,10 +90,7 @@ function Projects() {
                 <span className='card__description' id='cardText6'>
                   {t("translation.cardText6")}
                 </span>
-                <a
-                  href='https://innovqube.com/mysaas/'
-                  target='_blank'
-                >
+                <a href='https://innovqube.com/mysaas/' target='_blank'>
                   {t("translation.innovqube")}
                 </a>
                 <div className='codeLanguage'>
@@ -52,7 +111,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article'>
+          <article className='card__article revealProject-2'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Kanban", "_blank")
@@ -89,7 +148,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article'>
+          <article className='card__article revealProject-1'>
             <div
               onClick={() =>
                 window.open(
@@ -128,7 +187,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article'>
+          <article className='card__article revealProject-8'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/App_meteo", "_blank")
@@ -170,7 +229,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article'>
+          <article className='card__article revealProject-7'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Quizz_js", "_blank")
@@ -209,7 +268,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article'>
+          <article className='card__article revealProject-6'>
             <div
               onClick={() =>
                 window.open(
@@ -254,7 +313,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article'>
+          <article className='card__article revealProject-5'>
             <div
               className='card__button'
               onClick={() =>
