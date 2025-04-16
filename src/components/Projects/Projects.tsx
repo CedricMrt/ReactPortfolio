@@ -8,7 +8,7 @@ function Projects() {
   const { ref, isIntersecting } = useIntersectionObserver({
     root: null,
     rootMargin: "0px",
-    threshold: 0.45,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function Projects() {
   }, [isIntersecting, ref]);
   return (
     <>
-      <section className='projects' id='projects ' ref={ref}>
+      <section className='projects' id='projects' ref={ref}>
         <h2 id='h2Title2'>{t("translation.h2Title2")}</h2>
 
         <div className='card__container'>
