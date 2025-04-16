@@ -26,7 +26,7 @@ function Projects() {
         <h2 id='h2Title2'>{t("translation.h2Title2")}</h2>
 
         <div className='card__container'>
-          <article className='card__article revealProject-4'>
+          <article className='card__article revealProject-1'>
             <div
               onClick={() =>
                 window.open(
@@ -71,7 +71,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-3'>
+          <article className='card__article revealProject-2'>
             <div
               onClick={() =>
                 window.open("https://innovqube.com/mysaas/", "_blank")
@@ -111,7 +111,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-2'>
+          <article className='card__article revealProject-3'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Kanban", "_blank")
@@ -148,7 +148,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-1'>
+          <article className='card__article revealProject-4'>
             <div
               onClick={() =>
                 window.open(
@@ -187,7 +187,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-8'>
+          <article className='card__article revealProject-5'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/App_meteo", "_blank")
@@ -229,7 +229,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-7'>
+          <article className='card__article revealProject-6'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Quizz_js", "_blank")
@@ -268,7 +268,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-6'>
+          <article className='card__article revealProject-7'>
             <div
               onClick={() =>
                 window.open(
@@ -313,7 +313,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-5'>
+          <article className='card__article revealProject-8'>
             <div
               className='card__button'
               onClick={() =>
