@@ -29,6 +29,45 @@ function Projects() {
           <article className='card__article revealProject-1'>
             <div
               onClick={() =>
+                window.open("https://my-resto-app.vercel.app/", "_blank")
+              }
+              className='card__button'
+            >
+              <img
+                src={"/resto.png"}
+                alt='image du projet'
+                className='card__img'
+              />
+              <div className='card__data'>
+                <h3 className='card__title' id='cardTitle5'>
+                  {t("translation.cardTitle5")}
+                </h3>
+                <span className='card__description' id='cardText5'>
+                  {t("translation.cardText5")}
+                </span>
+                <a href='https://my-resto-app.vercel.app/' target='_blank'>
+                  {t("translation.clickHereTry")}
+                </a>
+                <div className='codeLanguage'>
+                  <span className='language__item'>
+                    <img src={"/nextjs.svg"} alt='' />
+                    NextJs
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/tailwind.svg"} alt='' />
+                    Tailwind
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/railway.png"} alt='' />
+                    Railway
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className='card__article revealProject-2'>
+            <div
+              onClick={() =>
                 window.open(
                   "https://my-educational-app-cm.vercel.app/",
                   "_blank"
@@ -71,7 +110,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-2'>
+          <article className='card__article revealProject-3'>
             <div
               onClick={() =>
                 window.open("https://innovqube.com/mysaas/", "_blank")
@@ -111,7 +150,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-3'>
+          <article className='card__article revealProject-4'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Kanban", "_blank")
@@ -148,7 +187,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-4'>
+          <article className='card__article revealProject-5'>
             <div
               onClick={() =>
                 window.open(
@@ -187,7 +226,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-5'>
+          <article className='card__article revealProject-6'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/App_meteo", "_blank")
@@ -229,7 +268,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-6'>
+          <article className='card__article revealProject-7'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Quizz_js", "_blank")
@@ -268,7 +307,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-7'>
+          <article className='card__article revealProject-8'>
             <div
               onClick={() =>
                 window.open(
@@ -313,7 +352,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-8'>
+          {/* <article className='card__article revealProject-8'>
             <div
               className='card__button'
               onClick={() =>
@@ -357,7 +396,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </article>
+          </article> */}
         </div>
       </section>
     </>
