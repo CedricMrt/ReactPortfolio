@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Projects.scss";
 import { useTranslation } from "react-i18next";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
@@ -10,6 +10,7 @@ function Projects() {
     rootMargin: "0px",
     threshold: 0.2,
   });
+  const [showFirst, setShowFirst] = useState(true);
 
   useEffect(() => {
     if (isIntersecting) {
@@ -20,6 +21,15 @@ function Projects() {
         });
     }
   }, [isIntersecting, ref]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowFirst((prev) => !prev);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section className='projects' id='projects' ref={ref}>
@@ -27,6 +37,51 @@ function Projects() {
 
         <div className='card__container'>
           <article className='card__article revealProject-1'>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://eshop-template-livid.vercel.app/",
+                  "_blank"
+                )
+              }
+              className='card__button'
+            >
+              <img
+                src={showFirst ? "/eshop.png" : "/eshopdashboard.png"}
+                alt='image du projet'
+                className='card__img'
+              />
+              <div className='card__data'>
+                <h3 className='card__title' id='cardTitle2'>
+                  {t("translation.cardTitle2")}
+                </h3>
+                <span className='card__description' id='cardText2'>
+                  {t("translation.cardText2")}
+                </span>
+                <a
+                  href='https://eshop-template-livid.vercel.app/'
+                  target='_blank'
+                >
+                  {t("translation.clickHereTry")}
+                </a>
+                <div className='codeLanguage'>
+                  <span className='language__item'>
+                    <img src={"/nextjs.svg"} alt='' />
+                    NextJs
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/tailwind.svg"} alt='' />
+                    Tailwind
+                  </span>
+                  <span className='language__item'>
+                    <img src={"/mongodb.svg"} alt='' />
+                    MongoDb
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className='card__article revealProject-2'>
             <div
               onClick={() =>
                 window.open("https://my-resto-app.vercel.app/", "_blank")
@@ -65,7 +120,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-2'>
+          <article className='card__article revealProject-3'>
             <div
               onClick={() =>
                 window.open(
@@ -110,7 +165,7 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-3'>
+          <article className='card__article revealProject-4'>
             <div
               onClick={() =>
                 window.open("https://innovqube.com/mysaas/", "_blank")
@@ -150,7 +205,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-4'>
+          <article className='card__article revealProject-5'>
             <div
               onClick={() =>
                 window.open("https://github.com/CedricMrt/Kanban", "_blank")
@@ -187,7 +242,7 @@ function Projects() {
             </div>
           </article>
 
-          <article className='card__article revealProject-5'>
+          <article className='card__article revealProject-6'>
             <div
               onClick={() =>
                 window.open(
@@ -226,177 +281,6 @@ function Projects() {
               </div>
             </div>
           </article>
-          <article className='card__article revealProject-6'>
-            <div
-              onClick={() =>
-                window.open("https://github.com/CedricMrt/App_meteo", "_blank")
-              }
-              className='card__button'
-            >
-              <img
-                src={"/wheatherApp.webp"}
-                alt='image du projet'
-                className='card__img'
-              />
-              <div className='card__data'>
-                <h3 className='card__title' id='cardTitle2'>
-                  {t("translation.cardTitle2")}
-                </h3>
-                <span className='card__description' id='cardText2'>
-                  {t("translation.cardText2")}
-                </span>
-                <a
-                  href='https://cedricmrt.github.io/App_meteo/'
-                  target='_blank'
-                >
-                  {t("translation.clickHereTry")}
-                </a>
-                <div className='codeLanguage'>
-                  <span className='language__item'>
-                    <img src={"/html5.svg"} alt='' />
-                    Html
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/css3.svg"} alt='' />
-                    Css
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/js.svg"} alt='' />
-                    Javascript
-                  </span>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article className='card__article revealProject-7'>
-            <div
-              onClick={() =>
-                window.open("https://github.com/CedricMrt/Quizz_js", "_blank")
-              }
-              className='card__button'
-            >
-              <img
-                src={"/quizz.webp"}
-                alt='image du projet'
-                className='card__img'
-              />
-              <div className='card__data'>
-                <h3 className='card__title' id='cardTitle3'>
-                  Quizz
-                </h3>
-                <span className='card__description' id='cardText3'>
-                  {t("translation.cardText3")}
-                </span>
-                <a href='https://cedricmrt.github.io/Quizz_js/' target='_blank'>
-                  {t("translation.clickHereTry")}
-                </a>
-                <div className='codeLanguage'>
-                  <span className='language__item'>
-                    <img src={"/html5.svg"} alt='' />
-                    Html
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/css3.svg"} alt='' />
-                    Css
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/js.svg"} alt='' />
-                    Javascript
-                  </span>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article className='card__article revealProject-8'>
-            <div
-              onClick={() =>
-                window.open(
-                  "https://github.com/CedricMrt/Todolist_project",
-                  "_blank"
-                )
-              }
-              className='card__button'
-            >
-              <img
-                src={"/todolist-project.webp"}
-                alt='image du projet'
-                className='card__img'
-              />
-              <div className='card__data'>
-                <h3 className='card__title' id='cardTitle4'>
-                  TodoList
-                </h3>
-                <span className='card__description' id='cardText4'>
-                  {t("translation.cardText4")}
-                </span>
-                <a
-                  href='https://cedricmrt.github.io/Todolist_project/'
-                  target='_blank'
-                >
-                  {t("translation.clickHereTry")}
-                </a>
-                <div className='codeLanguage'>
-                  <span className='language__item'>
-                    <img src={"/html5.svg"} alt='' />
-                    Html
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/css3.svg"} alt='' />
-                    Css
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/js.svg"} alt='' />
-                    Javascript
-                  </span>
-                </div>
-              </div>
-            </div>
-          </article>
-          {/* <article className='card__article revealProject-8'>
-            <div
-              className='card__button'
-              onClick={() =>
-                window.open(
-                  "https://github.com/CedricMrt/Car_Location_Single_Page",
-                  "_blank"
-                )
-              }
-            >
-              <img
-                src={"/projet-portfolio1.webp"}
-                alt='image du projet'
-                className='card__img'
-              />
-              <div className='card__data'>
-                <h3 className='card__title' id='cardTitle5'>
-                  {t("translation.cardTitle5")}
-                </h3>
-                <span className='card__description' id='cardText5'>
-                  {t("translation.cardText5")}
-                </span>
-                <a
-                  href='https://cedricmrt.github.io/Car_Location_Single_Page/'
-                  target='_blank'
-                >
-                  {t("translation.clickHereTry")}
-                </a>
-                <div className='codeLanguage'>
-                  <span className='language__item'>
-                    <img src={"/html5.svg"} alt='' />
-                    Html
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/css3.svg"} alt='' />
-                    Css
-                  </span>
-                  <span className='language__item'>
-                    <img src={"/js.svg"} alt='' />
-                    Javascript
-                  </span>
-                </div>
-              </div>
-            </div>
-          </article> */}
         </div>
       </section>
     </>
